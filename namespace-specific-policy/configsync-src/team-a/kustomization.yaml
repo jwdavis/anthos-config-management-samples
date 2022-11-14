@@ -18,6 +18,7 @@ namespace: team-a
 
 resources:
 - ../base
+- another-role.yaml
 
 patches:
 - target:
