@@ -1,12 +1,14 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  name: team-admin
-  namespace: team-c
+  name: pod-reader
+  namespace: team-a
 rules:
 - apiGroups:
-  - apps
+  - ""
   resources:
-  - deployments
+  - pods
   verbs:
-  - '*'
+  - get
+  - watch
+  - list
